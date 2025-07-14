@@ -42,7 +42,9 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost">Sign In</Button>
+            <Button variant="ghost" asChild>
+              <a href="/signin">Sign In</a>
+            </Button>
             <Button variant="default">Get Started</Button>
           </div>
 
@@ -74,7 +76,9 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4 border-t border-border/50">
-                <Button variant="ghost" className="justify-start">Sign In</Button>
+                <Button variant="ghost" className="justify-start" asChild>
+                  <a href="/signin">Sign In</a>
+                </Button>
                 <Button variant="default" className="justify-start">Get Started</Button>
               </div>
             </div>
