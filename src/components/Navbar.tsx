@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/90 backdrop-blur-md border-b border-primary/20">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -33,7 +33,7 @@ const Navbar = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                className="text-white hover:text-accent-light transition-colors duration-300 font-medium"
               >
                 {link.label}
               </a>
@@ -54,9 +54,9 @@ const Navbar = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-foreground" />
+              <X className="h-6 w-6 text-white" />
             ) : (
-              <Menu className="h-6 w-6 text-foreground" />
+              <Menu className="h-6 w-6 text-white" />
             )}
           </button>
         </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-foreground hover:text-primary transition-colors duration-300 font-medium py-2"
+                  className="text-white hover:text-accent-light transition-colors duration-300 font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}

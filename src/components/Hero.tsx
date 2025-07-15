@@ -19,8 +19,8 @@ const Hero = () => {
           alt="Modern PG accommodation" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-secondary/40 to-accent/50"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-primary/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/70 via-primary-dark/50 to-secondary/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-primary/30"></div>
       </div>
 
       {/* Content */}
